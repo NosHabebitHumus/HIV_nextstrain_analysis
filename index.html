@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nextstrain Results</title>
+    <script src="https://unpkg.com/auspice"></script>
+</head>
+<body>
+    <div id="auspice-container"></div>
+    <script>
+        auspice.render({
+            datasets: [
+                {
+                    "name": "HIV_nextstrain",
+                    "json": "final.json"
+                }
+            ],
+            container: document.getElementById('auspice-container')
+        });
+    </script>
+</body>
+</html>
