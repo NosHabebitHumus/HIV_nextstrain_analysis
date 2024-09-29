@@ -9,7 +9,14 @@
 <body>
     <div id="auspice-container"></div>
 <!--     <script src="https://unpkg.com/auspice"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/auspice@2.58.0/index.min.js"></script>
+<!--     <script src="https://cdn.jsdelivr.net/npm/auspice@2.58.0/index.min.js"></script> -->
+    <script type="module">
+    import auspice from 'https://unpkg.com/auspice';
+  
+    // Now you can use auspice as expected
+        console.log("HUGS!");
+    console.log(auspice);
+    </script>
     
     <script>
         auspice.render({
